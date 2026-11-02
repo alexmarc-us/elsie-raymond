@@ -2,114 +2,226 @@
 <html lang="en-US">
 
 <head>
-  <title>Elsie Raymond - Contact</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact &amp; Press Kit | Elsie Raymond</title>
+  <meta name="description"
+    content="Contact Elsie Raymond, find representation details, and download bios and author photos from the press kit." />
+  <link rel="canonical" href="https://www.elsieraymond.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Elsie Raymond" />
+  <meta property="og:title" content="Contact &amp; Press Kit | Elsie Raymond" />
+  <meta property="og:description" content="Representation, press kit bios and author photos, and a contact form." />
+  <meta property="og:url" content="https://www.elsieraymond.com/contact.html" />
+  <meta property="og:image" content="https://www.elsieraymond.com/images/Square.jpeg" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600&family=Roboto:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/nav.js" defer></script>
 </head>
 
-<body class="no-sidebar is-preload">
-  <div id="page-wrapper">
-    <!-- Header -->
-    <section id="header">
-      <!-- Logo -->
-      <header>
-        <h1><a href="index.html">Elsie Raymond</a></h1>
-        <p>Writer of speculative fiction, essays and creative non-fiction.</p>
-      </header>
+<body>
+  <svg class="visually-hidden" aria-hidden="true">
+    <symbol id="sparkle" viewBox="0 0 24 24">
+      <path d="M12 0C12.9 7.6 16.4 11.1 24 12 16.4 12.9 12.9 16.4 12 24 11.1 16.4 7.6 12.9 0 12 7.6 11.1 11.1 7.6 12 0Z" />
+    </symbol>
+  </svg>
 
-      <!-- Nav -->
-      <nav id="nav">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Elsie Raymond</span>
+        <span class="brand-tagline">Speculative fiction &middot; Essays &middot; Creative non-fiction</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li class="current"><a href="contact.html">Contact</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
-    </section>
+    </div>
+  </header>
 
-    <!-- Main -->
-
-    <section id="main">
+  <main id="main">
+    <section class="section halftone">
       <div class="container">
-        <!-- Content -->
-        <article class="box post">
-          <header class="major">
-            <h2>Contact</h2>
-            <p>Please get in touch with the form below.</p>
-          </header>
-          <form target="_blank" action="https://formsubmit.co/el/huliwe" method="POST">
-            <div class="form-group">
+        <header class="section-header">
+          <p class="eyebrow">
+            <svg class="sparkle" aria-hidden="true"><use href="#sparkle" /></svg>
+            Get in touch
+          </p>
+          <h1>Contact</h1>
+          <p class="lede">
+            For rights and business inquiries, please reach out to Elsie's agent. For everything else, send a note
+            using the form below.
+          </p>
+        </header>
+
+        <div class="split split--top">
+          <section class="card" aria-labelledby="form-heading">
+            <h2 id="form-heading">Send a message</h2>
+            <form class="form" action="https://formsubmit.co/el/huliwe" method="POST" target="_blank">
+              <div class="honeypot" aria-hidden="true">
+                <label for="website">Leave this field empty</label>
+                <input type="text" id="website" name="_honey" tabindex="-1" autocomplete="off" />
+              </div>
               <div class="form-row">
-                <div class="col">
+                <div class="field">
                   <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" placeholder="Full Name" required />
+                  <input type="text" id="name" name="name" placeholder="Full name" autocomplete="name" required />
                 </div>
-                <div class="col">
+                <div class="field">
                   <label for="email">Email</label>
-                  <input type="email" name="email" class="form-control" placeholder="Email Address" required />
+                  <input type="email" id="email" name="email" placeholder="Email address" autocomplete="email"
+                    required />
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-            </div>
-            <br />
-            <button type="submit" class="btn btn-lg btn-dark btn-block">
-              Submit Form
-            </button>
-          </form>
-        </article>
-      </div>
-    </section>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="8" placeholder="Your message" required></textarea>
+              </div>
+              <div>
+                <button type="submit" class="button">Send message</button>
+              </div>
+            </form>
+          </section>
 
-    <!-- Footer -->
-    <section id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <!-- Copyright -->
-            <div id="copyright">
-              <ul class="links">
-                <li>
-                  <a style="text-decoration: none" href="https://elsieraymondwrites.substack.com/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-substack" viewBox="0 0 16 16">
-                      <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z" />
-                    </svg>
-                    Substack
-                  </a>
-                </li>
-                <li>
-                  <a style="text-decoration: none" href="https://bsky.app/profile/elsieraymond.bsky.social">
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000"
-                      preserveAspectRatio="xMidYMid meet" width="16" height="16" fill="currentColor">
-                      <script xmlns="" />
-                      <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
-                        <path
-                          d="M390 4706 c-136 -38 -201 -106 -247 -261 -25 -85 -24 -350 1 -645 2 -19 7 -71 10 -115 4 -44 9 -96 11 -115 2 -19 6 -71 10 -115 6 -84 23 -243 30 -285 2 -14 6 -52 10 -85 6 -53 13 -98 29 -171 11 -54 63 -166 111 -240 108 -167 281 -302 470 -369 28 -9 59 -21 70 -26 30 -13 181 -46 250 -55 33 -4 113 -8 177 -8 64 -1 114 -4 110 -7 -6 -4 -65 -17 -197 -43 -11 -2 -47 -11 -80 -21 -33 -9 -73 -20 -90 -24 -50 -14 -180 -68 -245 -103 -91 -49 -173 -119 -219 -188 -50 -75 -61 -112 -68 -217 -12 -180 93 -411 310 -681 222 -277 442 -450 663 -524 88 -29 233 -31 309 -4 180 64 333 229 473 511 77 155 189 454 247 664 19 67 29 76 39 34 9 -39 27 -100 91 -317 148 -494 305 -754 516 -850 74 -34 109 -40 219 -39 108 1 202 27 325 91 92 48 267 161 295 192 3 3 25 21 50 41 52 42 151 143 205 209 20 25 44 54 53 65 28 33 122 179 122 189 0 5 6 17 14 25 8 9 28 57 46 106 108 309 -13 558 -355 727 -130 65 -292 118 -435 144 -73 14 -54 19 68 20 254 1 468 53 660 160 241 135 421 396 447 649 4 38 8 72 10 75 2 5 5 28 20 168 3 23 7 61 10 85 2 23 7 74 11 112 3 39 7 86 9 105 2 19 7 76 10 125 4 50 8 106 10 125 20 204 26 480 13 558 -26 153 -80 247 -168 292 -203 104 -452 40 -817 -209 -131 -90 -162 -114 -248 -186 -319 -270 -683 -685 -967 -1105 -91 -134 -218 -344 -218 -360 0 -23 -18 -7 -39 36 -27 58 -135 231 -210 339 -64 93 -211 295 -226 311 -5 6 -21 26 -35 44 -14 18 -30 38 -35 44 -6 6 -39 46 -74 90 -124 152 -370 410 -511 536 -19 17 -44 39 -55 49 -218 194 -582 408 -762 446 -57 13 -189 13 -233 1z" />
-                      </g>
-                    </svg>
-                    Bluesky
-                  </a>
-                </li>
-                <li>&copy; 2025 Elsie Raymond. All rights reserved.</li>
-              </ul>
-            </div>
-          </div>
+          <section class="card" id="representation" aria-labelledby="representation-heading">
+            <h2 id="representation-heading">Representation</h2>
+            <!-- TODO: replace with the client's agent details -->
+            <dl class="meta-list">
+              <dt>Agent</dt>
+              <dd><span class="placeholder">Agent name</span></dd>
+              <dt>Agency</dt>
+              <dd><span class="placeholder">Agency name</span></dd>
+              <dt>Email</dt>
+              <dd><span class="placeholder">agent@agency.com</span></dd>
+            </dl>
+            <p class="small">
+              Publishers, producers and event organizers: please contact Elsie's agent directly. Bios and author
+              photos are in the <a href="#press-kit">press kit</a>.
+            </p>
+          </section>
         </div>
       </div>
     </section>
-  </div>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.dropotron.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+    <section class="section" id="press-kit" aria-labelledby="press-kit-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">
+            <svg class="sparkle" aria-hidden="true"><use href="#sparkle" /></svg>
+            For press &amp; events
+          </p>
+          <h2 id="press-kit-heading">Press Kit</h2>
+          <p>Bios in several lengths and author photos for press and promotional use.</p>
+        </header>
+
+        <div class="card-grid card-grid--3">
+          <article class="card">
+            <h3 class="bio-length">50 words</h3>
+            <p>
+              Elsie Raymond is a writer of speculative fiction, horror, and essays from the Pacific Northwest. An alum
+              of the Viable Paradise workshop and a member of SFWA and HWA, she has published work in literary
+              magazines, anthologies, and on a podcast. She raves about food and books on her Substack.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="bio-length">100 words</h3>
+            <p>
+              Elsie Raymond is a mom and writer from the Pacific Northwest. She writes speculative fiction, horror,
+              essays, and creative non-fiction, and raves about food and books on her Substack. Elsie is an alum of the
+              Viable Paradise workshop and a member of the Science Fiction &amp; Fantasy Writers Association (SFWA) and
+              the Horror Writers Association (HWA). Her short fiction has appeared in the anthologies <cite>New Year New
+              You</cite> and <cite>Frontiers of Fright</cite>, in literary magazines, and on a podcast. Her dystopian
+              romance novel, <cite>Chain Reaction</cite>, won third place in the Speculative Fiction category of the
+              2024 Pacific Northwest Writers Association unpublished novel contest.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="bio-length">150 words</h3>
+            <!-- TODO: 150-word bio from the client -->
+            <p><span class="placeholder">150-word bio coming soon.</span></p>
+          </article>
+        </div>
+
+        <h3 class="press-subheading">Author photos</h3>
+        <!-- TODO: link high-resolution originals and confirm photographer credits -->
+        <div class="headshots">
+          <figure class="headshot">
+            <div class="crt">
+              <img src="images/Square.jpeg" width="400" height="398" loading="lazy"
+                alt="Elsie Raymond wearing a red sweater and smiling" />
+            </div>
+            <figcaption>
+              <p class="small">Color headshot &middot; Photo: <span class="placeholder">Photographer</span></p>
+              <a class="button button--ghost" href="images/Square.jpeg" download="Elsie-Raymond-headshot.jpeg">Download</a>
+            </figcaption>
+          </figure>
+          <figure class="headshot">
+            <div class="crt">
+              <img src="images/wall.jpeg" width="900" height="600" loading="lazy"
+                alt="Elsie Raymond smiling with arms crossed in front of a weathered brick wall" />
+            </div>
+            <figcaption>
+              <p class="small">Brick wall portrait &middot; Photo: <span class="placeholder">Photographer</span></p>
+              <a class="button button--ghost" href="images/wall.jpeg" download="Elsie-Raymond-portrait.jpeg">Download</a>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="small muted headshots-note">
+          Photos may be used for press and promotional purposes with photographer credit.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-divider" aria-hidden="true">
+        <svg class="sparkle"><use href="#sparkle" /></svg>
+        <svg class="sparkle"><use href="#sparkle" /></svg>
+        <svg class="sparkle"><use href="#sparkle" /></svg>
+      </div>
+      <ul class="social" aria-label="Social media">
+        <li>
+          <a href="https://elsieraymondwrites.substack.com/">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z" />
+            </svg>
+            Substack
+          </a>
+        </li>
+        <li>
+          <a href="https://bsky.app/profile/elsieraymond.bsky.social">
+            <svg viewBox="0 0 512 512" aria-hidden="true">
+              <g transform="translate(0,512) scale(0.1,-0.1)">
+                <path
+                  d="M390 4706 c-136 -38 -201 -106 -247 -261 -25 -85 -24 -350 1 -645 2 -19 7 -71 10 -115 4 -44 9 -96 11 -115 2 -19 6 -71 10 -115 6 -84 23 -243 30 -285 2 -14 6 -52 10 -85 6 -53 13 -98 29 -171 11 -54 63 -166 111 -240 108 -167 281 -302 470 -369 28 -9 59 -21 70 -26 30 -13 181 -46 250 -55 33 -4 113 -8 177 -8 64 -1 114 -4 110 -7 -6 -4 -65 -17 -197 -43 -11 -2 -47 -11 -80 -21 -33 -9 -73 -20 -90 -24 -50 -14 -180 -68 -245 -103 -91 -49 -173 -119 -219 -188 -50 -75 -61 -112 -68 -217 -12 -180 93 -411 310 -681 222 -277 442 -450 663 -524 88 -29 233 -31 309 -4 180 64 333 229 473 511 77 155 189 454 247 664 19 67 29 76 39 34 9 -39 27 -100 91 -317 148 -494 305 -754 516 -850 74 -34 109 -40 219 -39 108 1 202 27 325 91 92 48 267 161 295 192 3 3 25 21 50 41 52 42 151 143 205 209 20 25 44 54 53 65 28 33 122 179 122 189 0 5 6 17 14 25 8 9 28 57 46 106 108 309 -13 558 -355 727 -130 65 -292 118 -435 144 -73 14 -54 19 68 20 254 1 468 53 660 160 241 135 421 396 447 649 4 38 8 72 10 75 2 5 5 28 20 168 3 23 7 61 10 85 2 23 7 74 11 112 3 39 7 86 9 105 2 19 7 76 10 125 4 50 8 106 10 125 20 204 26 480 13 558 -26 153 -80 247 -168 292 -203 104 -452 40 -817 -209 -131 -90 -162 -114 -248 -186 -319 -270 -683 -685 -967 -1105 -91 -134 -218 -344 -218 -360 0 -23 -18 -7 -39 36 -27 58 -135 231 -210 339 -64 93 -211 295 -226 311 -5 6 -21 26 -35 44 -14 18 -30 38 -35 44 -6 6 -39 46 -74 90 -124 152 -370 410 -511 536 -19 17 -44 39 -55 49 -218 194 -582 408 -762 446 -57 13 -189 13 -233 1z" />
+              </g>
+            </svg>
+            Bluesky
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">&copy; 2026 Elsie Raymond. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 
 </html>
