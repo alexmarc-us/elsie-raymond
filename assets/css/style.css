@@ -144,14 +144,6 @@ strong { font-weight: 700; }
   white-space: nowrap;
 }
 
-/* Placeholder copy awaiting client input */
-.placeholder {
-  padding: 0 0.25em;
-  border: 1px dashed var(--rose);
-  border-radius: 4px;
-  color: var(--pattens);
-}
-
 /* Layout */
 
 .container {
@@ -518,8 +510,8 @@ main { flex: 1; }
 }
 
 @media (min-width: 737px) {
-  .card-grid--3 { grid-template-columns: repeat(3, 1fr); }
   .card-grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .card--wide { grid-column: 1 / -1; }
 }
 
 /* Faux cover art for the unpublished novel */
@@ -609,50 +601,24 @@ main { flex: 1; }
   list-style: none;
 }
 
-/* Work grid */
+/* Published cover feature */
 
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 1.75rem;
-  padding: 0;
-  list-style: none;
-}
-
-.work-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-  background: rgba(42, 23, 77, 0.7);
-  border: 1px solid rgba(135, 119, 166, 0.35);
-  border-radius: var(--radius);
-  transition: box-shadow 0.25s, transform 0.25s;
-}
-
-.work-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 1.75rem rgba(255, 0, 144, 0.25);
-}
-
-.work-card img {
+.cover {
   width: 100%;
-  aspect-ratio: 2 / 3;
-  object-fit: contain;
-  background: var(--ink);
+  max-width: 340px;
+  margin-inline: auto;
+  border-radius: 6px;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5), 0 0 2.5rem rgba(255, 0, 144, 0.2);
 }
 
-.work-card-body { padding: 1.25rem 1.25rem 1.5rem; }
-.work-card-body h3 { font-size: 1.1rem; }
-
-.work-card-meta {
-  font-family: var(--font-head);
-  font-weight: 600;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
+.feature-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3rem);
   text-transform: uppercase;
-  color: var(--pattens);
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
 }
 
 /* Feed */
