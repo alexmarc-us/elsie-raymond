@@ -741,7 +741,7 @@ main { flex: 1; }
   box-shadow: var(--glow-blue);
 }
 
-.honeypot { display: none; }
+.form-status { min-height: 1.5em; margin: 0.75rem 0 0; }
 
 /* Footer */
 
